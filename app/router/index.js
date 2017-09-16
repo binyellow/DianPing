@@ -8,6 +8,7 @@ import NotFound from '../container/NotFound'
 import City from '../container/City'
 import Search from '../container/Search'
 import Login from '../container/Login'
+import User from '../container/User'
 class RouteMap extends React.Component{
     render(){
         return(
@@ -19,6 +20,7 @@ class RouteMap extends React.Component{
                     <Route path="/search/:category(/:keyword)" component={Search}/>
                     <Route path="/detail/:id" component={Detail}></Route>
                     <Route path="/login(/:router)" component={Login}/>
+                    <Route path="/user" component={User}/>
                     <Route path="*" component={NotFound}></Route>
                 </Route>
             </Router>
