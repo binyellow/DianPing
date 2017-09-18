@@ -10,8 +10,8 @@ class User extends React.Component{
     }
     render(){
         const userinfo = this.props.userinfo
-        console.log(userinfo.username)
-        console.log(userinfo.cityName)
+        // console.log(userinfo.username)
+        // console.log(userinfo.cityName)
         return(
             <div>
                 <Header title="用户中心" backRouter="/"/>

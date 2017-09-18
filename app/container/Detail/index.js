@@ -10,6 +10,7 @@ class Detail extends React.Component {
     render() {
         // 获取商户ID
         const id = this.props.params.id
+        // console.log(id)
         //id是从Home中的fetch方法获得的data中的数据
         return (
             <div>

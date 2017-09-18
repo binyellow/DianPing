@@ -24,7 +24,7 @@ class APP extends React.Component{
         if (cityName == null) {
             cityName='北京'
         }
-        console.log(cityName);
+        // console.log(cityName);
         this.props.userInfoActions.update({cityName:cityName})
         this.setState({
             initDone:true

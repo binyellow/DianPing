@@ -3,7 +3,7 @@ const initialState = []
 export default function store(state=initialState,action) {
     switch (action.type) {
         case actionTypes.STORE_ADD:
-            state.unshift(state.data);//把新的数据推到原始数组的前面
+            state.unshift(action.data);//把新的数据推到原始数组的前面
             return state;
         case actionTypes.STORE_UPDATE:
             return action.data;

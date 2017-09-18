@@ -27,8 +27,9 @@ class Buy extends React.Component {
     //检查商品是否收藏
     checkStoreState(){
         const id = this.props.id;
+        // console.log(id);
         const store = this.props.store;
-
+        // console.log(store);
         //判断store中的item有没有已经收藏的和当前id一样的商品
         store.some(item=>{
             if (item.id==id) {
@@ -59,6 +60,7 @@ class Buy extends React.Component {
         }
 
         const id = this.props.id;
+        // console.log(id);
         const storeActions = this.props.storeActions;
         if (this.state.isStore) {
             //被收藏则取消收藏
@@ -77,7 +79,7 @@ class Buy extends React.Component {
         const userinfo = this.props.userinfo;
         if (!userinfo.username) {
             //如果没登录则跳转到登录页面
-            hashHistory.push("/login/"+encodeURIComponent("/detail"+id));
+            hashHistory.push("/login/"+encodeURIComponent("/detail/"+id));
             return false;
         }
         return true;
