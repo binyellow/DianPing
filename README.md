@@ -3,7 +3,7 @@
 2. webpack对Plugins和Module的使用
 3. 路由的规则和传参
 4. [文件名省略和怎么在文件中加版权信息](./docs/Webpack_大众点评的配置.md)
-5. [模块依赖、Router配置、React优化](./docs/Webpack_大众点评的配置.md)
+5. [模块依赖、Router配置、React优化](./docs/Webpack-React环境搭配和Router.md)
 6. 关于木偶组件和智能组件：
     - 数据的操作都在只能组件中，当其太复杂时可以添加subpage
     - 木偶组件只进行数据展示，回调函数和数据都通过props传递，有利于组件的功能分离和维护
