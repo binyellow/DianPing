@@ -9,6 +9,7 @@ import City from '../container/City'
 import Search from '../container/Search'
 import Login from '../container/Login'
 import User from '../container/User'
+//<Route path="/list" component={List}></Route>
 class RouteMap extends React.Component{
     render(){
         return(
@@ -16,7 +17,6 @@ class RouteMap extends React.Component{
                 <Route path="/" component={APP}>
                     <IndexRoute component={Home}></IndexRoute>
                     <Route path='/city' component={City}/>
-                    <Route path="/list" component={List}></Route>
                     <Route path="/search/:category(/:keyword)" component={Search}/>
                     <Route path="/detail/:id" component={Detail}></Route>
                     <Route path="/login(/:router)" component={Login}/>
