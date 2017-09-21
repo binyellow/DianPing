@@ -44,6 +44,7 @@ class List extends React.Component{
         });
         const cityName = this.props.cityName;
         const page = this.state.page;
+        // console.log(page)
         const result = getListData(cityName,page);
         this.resultHandler(result);
 
@@ -54,11 +55,11 @@ class List extends React.Component{
     }
     //处理数据
     resultHandler(result){
-        result.then(res=>{
+        result.then(res=>{  //Promise对象
             return res.json()
         }).then(json=>{
             // console.log(json);
-            const hasMore = json.hasMore;
+            const hasMore = json.hasMore;   //json.hasMore=True
             const data = json.data;
 
             this.setState({

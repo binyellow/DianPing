@@ -27,7 +27,7 @@ class LoadMore extends React.Component {
         const wrapper = this.refs.wrapper
         let timeoutId
         function callback(){
-            const top = wrapper.getBoundingClientRect().top
+            const top = wrapper.getBoundingClientRect().top //加载中按钮距离顶部的距离小于屏幕高度就加载下一页数据
             const windowHeight = window.screen.height
             if (top && top<windowHeight) {
                 loadMoreFn()
