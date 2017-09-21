@@ -1,5 +1,7 @@
 ## React-Router、React-Redux、Webpack
-1. ![Redux如何管理数据](http://orpwhzbuc.bkt.clouddn.com/bg2016091802.jpg)
+![](./pics/demo/idea.png)
+1. 
+	- ![Redux如何管理数据](http://orpwhzbuc.bkt.clouddn.com/bg2016091802.jpg)
 2. webpack对Plugins和Module的使用
 3. 路由的规则和传参
 4. [文件名省略和怎么在文件中加版权信息](./docs/Webpack_大众点评的配置.md)
