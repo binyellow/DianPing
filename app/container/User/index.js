@@ -4,6 +4,7 @@ import {hashHistory} from 'react-router'
 import {connect} from 'react-redux'
 import UserInfo from '../../component/UserInfo'
 import OrderList from './subpage/OrderList'
+import ShopCar from './subpage/ShopCar'
 class User extends React.Component{
     constructor(props,state){
         super(props,state);
@@ -16,6 +17,7 @@ class User extends React.Component{
             <div>
                 <Header title="用户中心" backRouter="/"/>
                 <UserInfo username={userinfo.username} city={userinfo.cityName}/>
+                <ShopCar/>
                 <OrderList username={userinfo.username}/>
             </div>
         )

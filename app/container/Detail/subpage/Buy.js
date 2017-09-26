@@ -48,9 +48,21 @@ class Buy extends React.Component {
         }
 
         //购买操作
-
+        const id = this.props.id;
+        console.log(id)
+        const storeActions = this.props.storeActions;
+        if (this.state.isStore) {
+            //被收藏则取消收藏
+            storeActions.rm({id:id});
+        } else{
+            storeActions.add({id:id});
+        }
+        //修改状态
+        this.setState({
+            isStore:!this.state.isStore
+        })
         //跳转到用户主页
-        hashHistory.push("/user")
+        hashHistory.push("/user/"+encodeURIComponent(id))
     }
     //收藏事件
     storeHandle(){

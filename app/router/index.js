@@ -20,7 +20,7 @@ class RouteMap extends React.Component{
                     <Route path="/search/:category(/:keyword)" component={Search}/>
                     <Route path="/detail/:id" component={Detail}></Route>
                     <Route path="/login(/:router)" component={Login}/>
-                    <Route path="/user" component={User}/>
+                    <Route path="/user(/:id)" component={User}/>
                     <Route path="*" component={NotFound}></Route>
                 </Route>
             </Router>
